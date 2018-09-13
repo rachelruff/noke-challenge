@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", Roboto, "Segoe UI", sans-serif;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/*///////////////////////
+Elements
+////////////////////////*/
+.blue-button {
+  background-color: #0071ce;
+  color: white !important;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+/*///////////////////////
+Header section
+////////////////////////*/
+
+header {
+  background-color: green;
+  height: 109px;
+  width: 100vw;
+}
+
+.header-container {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header-logo,
+.header-nav,
+.header-action-items {
+  display: inline-block;
+}
+
+.header-logo {
+  width: 200px;
+  height: 109px;
+  text-align: center;
+  
+}
+
+.header-logo img {
+  margin: auto;
+
+}
+
+.header-nav {
+  width: 690px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+.header-nav li {
+  color: #595a5c;
+  display: inline-block;
+  font-family: "Poppins", Poppins, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
+
+.header-action-items {
+  /* width: 15%; */
+  width: 280px;
+  float: right;
+  margin-top: 20px;
+}
+.header-action-items li {
+  display: inline-block;
+  font-size: 16px;
+  color: #929497;
+  padding: 0 10px;
+}
+
+.header-request-button {
+}
+
+@media screen and (max-width: 1200px) {
+  .header-nav {
+  }
+}
