@@ -1,89 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+*/html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,17 +10,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 body {
@@ -125,8 +33,14 @@ q:after {
 Elements
 ////////////////////////*/
 .blue-button {
-  background-color: #0071ce;
+  background-color: #0071ce; /*/blue/*/
+  border: none;
+  border-radius: 25px;
   color: white !important;
+  display: inline-block;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
 ol,
@@ -138,7 +52,7 @@ Header section
 ////////////////////////*/
 
 header {
-  background-color: green;
+  background-color: white;
   height: 109px;
   width: 100vw;
 }
@@ -157,22 +71,20 @@ header {
 }
 
 .header-logo {
-  width: 200px;
   height: 109px;
   text-align: center;
-  
+  width: 200px;
 }
 
 .header-logo img {
   margin: auto;
-
 }
 
 .header-nav {
-  width: 690px;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   vertical-align: middle;
+  width: 690px;
 }
 .header-nav li {
   color: #595a5c;
@@ -185,14 +97,14 @@ header {
 
 .header-action-items {
   /* width: 15%; */
-  width: 280px;
   float: right;
+  width: 280px;
   margin-top: 20px;
 }
 .header-action-items li {
+  color: #929497;
   display: inline-block;
   font-size: 16px;
-  color: #929497;
   padding: 0 10px;
 }
 
@@ -202,4 +114,204 @@ header {
 @media screen and (max-width: 1200px) {
   .header-nav {
   }
+}
+
+.main-container {
+}
+
+/*///////////////////////
+Landing Page
+////////////////////////*/
+
+.landing-container {
+  align-items: center;
+  background-image: url(./assets/homepage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 740px;
+  width: 100%;
+}
+
+.landing-text {
+  margin: 0 10%;
+  width: 40%;
+}
+
+.landing-text h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #929497;
+}
+.landing-text h1 {
+  color: #0071ce;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.landing-text h3 {
+  color: #0071ce;
+  font-size: 26px;
+  font-weight: bolder;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.landing-text p {
+  color: #929497;
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+/*///////////////////////
+Web Portal && Mobile App
+////////////////////////*/
+
+.application-section-container {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 700px;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title h2 {
+  align-items: center;
+  color: #0071ce;
+  font-size: 40px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  font-weight: bolder;
+}
+
+.application-section-detail {
+  display: flex;
+  margin-top: 100px;
+}
+.application-section-img {
+  width: 50%;
+}
+
+.section-text-detail-container {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+}
+.section-text-detail {
+  margin: auto;
+  text-align: left;
+  width: 70%;
+}
+.section-text-detail h3 {
+  color: #0071ce;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.section-text-detail p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.app-container {
+  background-color: lightgrey;
+}
+
+.app-section-detail {
+  margin-right: 0;
+}
+
+/*///////////////////////
+API Info
+////////////////////////*/
+
+.apis-dual-container {
+  display: flex;
+}
+.api-container {
+  align-items: center;
+  background-color: lightblue;
+  display: flex;
+  height: 770px;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.api-content {
+  display: flex;
+  margin: 90px 5% 0 5%;
+}
+
+.title-lined-left {
+  /* text-align: left; */
+  /* margin: auto; */
+}
+
+.api-img {
+  width: 140px;
+}
+
+.api-img img {
+  width: 140px;
+}
+
+.api-container-right {
+  background-color: lightslategray;
+}
+/*///////////////////////
+Security
+////////////////////////*/
+
+.security-container {
+  background-image: url(./assets/security.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  height: 1000px;
+  width: 100%;
+  /* background-attachment: fixed; */
+  /* background-position: -10% 0;   */
+}
+
+.security-details-container {
+  background-color: lightskyblue;
+  color: white;
+  float: right;
+  height: 100%;
+  width: 60%;
+}
+
+.security-details {
+  margin: 9%;
+}
+
+.security-title {
+  margin: 20 0px;
+  text-transform: capitalize;
+}
+.security-title h2 {
+  font-size: 40px;
+}
+.security-title h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.security-feature img {
+  /* float: left; */
+}
+.security-feature-text {
+}
+.security-feature h3 {
+}
+
+.security-feature p {
+  color: lightgrey;
 }
